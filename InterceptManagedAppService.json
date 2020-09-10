@@ -26,7 +26,7 @@
         "P3v2",
         "P1v3",
         "P2v3",
-        "P3v3",        
+        "P3v3"        
       ],
       "metadata": {
         "description": "Describes plan's pricing tier and capacity. Check details at https://azure.microsoft.com/en-us/pricing/details/app-service/"
