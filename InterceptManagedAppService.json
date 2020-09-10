@@ -51,7 +51,7 @@
       },
       "properties": {
         "name": "[variables('appHostingPlanNameVar')]",
-        "numberOfWorkers": "[variables('numberOfWorkers')]"
+        "numberOfWorkers": "[parameters('numberOfWorkers')]"
       }
     },
     {
