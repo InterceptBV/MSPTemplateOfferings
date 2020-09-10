@@ -4,12 +4,11 @@
   "parameters": {
     "appServiceName": {
       "type": "string",
-      "minLength": 1,
-      "maxLength": 10
+      "minLength": 10
     },
     "appServicePlanName": {
       "type": "string",
-      "minLength": 1
+      "minLength": 5
     },
     "appServicePlanSkuName": {
       "type": "string",
