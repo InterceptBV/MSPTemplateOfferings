@@ -12,20 +12,17 @@
     },
     "appServicePlanSkuName": {
       "type": "string",
-      "defaultValue": "S1",
+      "defaultValue": "P1v3",
       "allowedValues": [
-        "F1",
-        "D1",
-        "B1",
-        "B2",
-        "B3",
         "S1",
         "S2",
         "S3",
-        "P1",
-        "P2",
-        "P3",
-        "P4"
+        "P1v2",
+        "P2v2",
+        "P3v2",
+        "P1v3",
+        "P2v3",
+        "P3v3",        
       ],
       "metadata": {
         "description": "Describes plan's pricing tier and capacity. Check details at https://azure.microsoft.com/en-us/pricing/details/app-service/"
@@ -62,8 +59,8 @@
         "[resourceId('Microsoft.Web/serverfarms', variables('appHostingPlanNameVar'))]"
       ],
       "tags": {
-        "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', variables('appHostingPlanNameVar')))]": "Resource",
-        "displayName": "webApp"
+        "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', variables('appHostingPlanNameVar')))]": "State",
+        "displayName": "InterceptManaged"
       },
       "properties": {
         "name": "[parameters('appServiceName')]",
