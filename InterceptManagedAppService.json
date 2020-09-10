@@ -4,11 +4,12 @@
 	"parameters": {
 		"appServiceName": {
 			"type": "string",
-			"defaultValue": "[concat('site', uniqueString(resourceGroup().id))]",
+			"defaultValue": "ManagedInterApp41",
 			"minLength": 10
 		},
 		"appServicePlanName": {
 			"type": "string",
+			"defaultValue": "ManagedInterPlan4",			
 			"minLength": 5
 		},
 		"numberOfWorkers": {
