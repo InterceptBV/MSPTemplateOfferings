@@ -4,6 +4,7 @@
 	"parameters": {
 		"appServiceName": {
 			"type": "string",
+			"defaultValue": "[concat('App-', [uniqueString(resourceGroup().id)]",
 			"minLength": 10
 		},
 		"appServicePlanName": {
@@ -34,8 +35,7 @@
 		}
 	},
 	"variables": {
-		"appHostingPlanNameVar": "[concat(parameters('appServicePlanName'),'-apps')]",
-		"appServicePlanNameVar": "[concat(parameters('appServicePlanNameVar'), [uniqueString(resourceGroup().id)]"
+		"appHostingPlanNameVar": "[concat(parameters('appServicePlanName'),'-apps')]"
 	},
 	"resources": [{
 			"name": "[variables('appHostingPlanNameVar')]",
@@ -55,7 +55,7 @@
 			}
 		},
 		{
-			"name": "[parameters('appServiceNameVar')]",
+			"name": "[parameters('appServiceName')]",
 			"type": "Microsoft.Web/sites",
 			"location": "[resourceGroup().location]",
 			"apiVersion": "2015-08-01",
