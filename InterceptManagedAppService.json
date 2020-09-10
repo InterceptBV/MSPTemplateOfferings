@@ -11,7 +11,7 @@
       "minLength": 5
     },
     "numberOfWorkers": {
-      "type": "string",
+      "type": "number",
       "defaultValue": 2
     },    
     "appServicePlanSkuName": {
