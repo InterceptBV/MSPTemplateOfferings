@@ -4,7 +4,7 @@
 	"parameters": {
 		"appServiceName": {
 			"type": "string",
-			"defaultValue": "[concat('App-', [uniqueString(resourceGroup().id)]",
+			"defaultValue": "[concat('site', uniqueString(resourceGroup().id))]",
 			"minLength": 10
 		},
 		"appServicePlanName": {
