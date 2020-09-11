@@ -64,8 +64,7 @@
 				"[resourceId('Microsoft.Web/serverfarms', variables('appHostingPlanNameVar'))]"
 			],
 			"tags": {
-				"[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', variables('appHostingPlanNameVar')))]": "Intercept",
-				"displayName": "Managed"
+				"Intercept": "Managed"
 			},
 			"properties": {
 				"name": "[parameters('appServiceName')]",
